@@ -4,12 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Weather Dashboard</title>
 </head>
 <body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <!--Contains the weather and search bar-->
+    <div class="row align-items-start">
+        <!--Weather report box-->
+        <main id="totalWeatherContainer" class="col-9">
+            <!--Current Day report container-->
+            <div id="currentDay" class="p-3">
+                <h2 id="currentCity">City and Date here</h2>
+                <p id="currentTemp">Current Temp Here</p>
+                <p id="currentWind">Wind Here</p>
+                <p id="currentHum">Humidity</p>
+            </div>
+            <!--5 day forecast container-->
+            <div id="fiveDayArea" class="container">
+                <div class="row p-2">
+                    <!--First day-->
+                    <div class="col p-1 m-2 fiveDayBlock">
+                        <h3 id="dayOneDate" class="text-center">Date goes here</h3>
+                        <p id="dayOneTemp">Temp goes here</p>
+                        <p id="dayOneWind">Wind goes here</p>
+                        <p id="dayOneHum">Humidity goes here</p>
+                    </div>
+                    <!--Second day-->
+                    <div class="col p-1 m-2 fiveDayBlock">
+                        <h3 id="dayTwoDate" class="text-center">Date goes here</h3>
+                        <p id="dayTwoTemp">Temp goes here</p>
+                        <p id="dayTwoWind">Wind goes here</p>
+                        <p id="dayTwoHum">Humidity goes here</p>
+                    </div>
+                    <!--Third day-->
+                    <div class="col p-1 m-2 fiveDayBlock">
+                        <h3 id="dayThreeDate" class="text-center">Date goes here</h3>
+                        <p id="dayThreeTemp">Temp goes here</p>
+                        <p id="dayThreeWind">Wind goes here</p>
+                        <p id="dayThreeHum">Humidity goes here</p>
+                    </div>
+                    <!--Fourth day-->
+                    <div class="col p-1 m-2 fiveDayBlock">
+                        <h3 id="dayFourDate" class="text-center">Date goes here</h3>
+                        <p id="dayFourTemp">Temp goes here</p>
+                        <p id="dayFourWind">Wind goes here</p>
+                        <p id="dayFourHum">Humidity goes here</p>
+                    </div>
+                    <!--Fifth day-->
+                    <div class="col p-1 m-2 fiveDayBlock">
+                        <h3 id="dayFiveDate" class="text-center">Date goes here</h3>
+                        <p id="dayFiveTemp">Temp goes here</p>
+                        <p id="dayFiveWind">Wind goes here</p>
+                        <p id="dayFiveHum">Humidity goes here</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+    
+        <aside id="searchBarContainer" class="col-3">
+            <!--Search Bar-->
+            <form class="row p-2 m-1" id="searchForCity">
+                <label>Search for a City:</label>
+                <input type="text" placeholder="Philadelphia" class="citySearch">
+                <button id="searchBtn">Search</button>
+            </form>
+            <!--Search History buttons-->
+            <div class=" row p-2 ms-2">
+                <button class="row my-2">
+                    Previous City 1
+                </button>
+                <button class="row my-2">
+                    Previous City 2
+                </button>
+                <button class="row my-2">
+                    Previous City 3
+                </button>
+                <button class="row my-2">
+                    Previous City 4
+                </button>
+                <button class="row my-2">
+                    Previous City 5
+                </button>
+            </div>
+        </aside>
+    </div>
+    
     
 
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
