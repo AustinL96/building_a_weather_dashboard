@@ -21,7 +21,7 @@ $(function () {
 //***Submitted City is equal to the city's name */
 var submittedCity = localStorage.getItem('searchForCity', '');
 //***Converts the city name into its data */
-var geocodingLatLon = "http://api.openweathermap.org/geo/1.0/direct?q=" + submittedCity + "&limit=1&appid=" + apiKey;
+var geocodingLatLon = "https://api.openweathermap.org/geo/1.0/direct?q=" + submittedCity + "&limit=1&appid=" + apiKey;
 //***Function to pull the lat/lon coordinates from the data */
     function getCoordsByCity() {
         $.get(geocodingLatLon).then(function (data) {
