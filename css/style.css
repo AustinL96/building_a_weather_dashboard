@@ -6,30 +6,70 @@
 }
 
 body {
-    background-color: aqua;
+    /* background-color: aqua; */
+    background-image: url("https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
-    margin: 10px;
-    padding: 5px;
     background-color: midnightblue;
     color: white;
     text-align: center;
+    border-style: ridge;
+    border-radius: 15px;
 }
 
-#totalWeatherContainer {
-    background-color: brown;
+/* #totalWeatherContainer {
+} */
+
+#currentDay,
+.fiveDayBlock {
+    background-color: rgba(122, 122, 122, 0.5);
+    border-style: ridge;
+    border-radius: 15px;
+    color: white;
 }
 
-#currentDay {
-    background-color: coral;
-}
-
-.fiveDayBlock  {
-    background-color: darkgreen;
-    font-size: 1em;
-}
-
-#searchBarContainer {
+/* #searchBarContainer {
     background-color: blueviolet;
+} */
+#searchForCity {
+    background-color: rgba(122, 122, 122, 0.5);
+    border-style: ridge;
+    border-radius: 15px;
+    color: white;
+}
+
+#searchForCity button {
+    background-color: midnightblue;
+    border-style: ridge;
+    /* border: 3px solid black; */
+    cursor: pointer;
+    color: white;
+}
+
+#searchForCity button:hover {
+    border: 2px solid white;
+}
+
+#searchInstruction {
+    font-weight: bold;
+}
+
+.previousSearches {
+    background-color: rgba(122, 122, 122, 0.5);
+    border-style: ridge;
+    border-radius: 15px;
+}
+
+.previousSearches button {
+    border-style: ridge;
+    color: white;
+    background-color: midnightblue;
+    cursor: pointer;
+}
+
+.previousSearches button:hover {
+    border: 2px solid white;
 }

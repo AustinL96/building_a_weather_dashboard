@@ -9,85 +9,93 @@
     <title>Weather Dashboard</title>
 </head>
 <body>
-    <header>
+    <img>
+    <header class="p-3 m-2 mx-5">
         <h1>Weather Dashboard</h1>
     </header>
     <!--Contains the weather and search bar-->
     <div class="row align-items-start">
         <!--Weather report box-->
-        <main id="totalWeatherContainer" class="col-9">
+        <main id="totalWeatherContainer" class="container-sm col-9 ps-5">
             <!--Current Day report container-->
-            <div id="currentDay" class="p-3">
-                <h2 id="currentCity">City and Date here</h2>
-                <p id="currentTemp">Current Temp Here</p>
-                <p id="currentWind">Wind Here</p>
-                <p id="currentHum">Humidity</p>
+            <div id="currentDay" class="p-3 mx-3">
+                <h2 id="currentCity">City & Date</h2>
+                <img id="currentImg" src="">
+                <p id="currentTemp">Current Temp:</p>
+                <p id="currentWind">Wind: <N>
+                <A></A></p>
+                <p id="currentHum">Humidity:</p>
             </div>
             <!--5 day forecast container-->
             <div id="fiveDayArea" class="container">
                 <div class="row p-2">
                     <!--First day-->
                     <div class="col p-1 m-2 fiveDayBlock">
-                        <h3 id="dayOneDate" class="text-center">Date goes here</h3>
-                        <p id="dayOneTemp">Temp goes here</p>
-                        <p id="dayOneWind">Wind goes here</p>
-                        <p id="dayOneHum">Humidity goes here</p>
+                        <h3 id="dayOneDate" class="text-center">Date</h3>
+                        <img id="dayOneImg" class="rounded mx-auto d-block" src="">
+                        <p id="dayOneTemp">Temp:</p>
+                        <p id="dayOneWind">Wind:</p>
+                        <p id="dayOneHum">Humidity:</p>
                     </div>
                     <!--Second day-->
                     <div class="col p-1 m-2 fiveDayBlock">
-                        <h3 id="dayTwoDate" class="text-center">Date goes here</h3>
-                        <p id="dayTwoTemp">Temp goes here</p>
-                        <p id="dayTwoWind">Wind goes here</p>
-                        <p id="dayTwoHum">Humidity goes here</p>
+                        <h3 id="dayTwoDate" class="text-center">Date</h3>
+                        <img id="dayTwoImg" class="rounded mx-auto d-block" src="">
+                        <p id="dayTwoTemp">Temp:</p>
+                        <p id="dayTwoWind">Wind:</p>
+                        <p id="dayTwoHum">Humidity:</p>
                     </div>
                     <!--Third day-->
                     <div class="col p-1 m-2 fiveDayBlock">
-                        <h3 id="dayThreeDate" class="text-center">Date goes here</h3>
-                        <p id="dayThreeTemp">Temp goes here</p>
-                        <p id="dayThreeWind">Wind goes here</p>
-                        <p id="dayThreeHum">Humidity goes here</p>
+                        <h3 id="dayThreeDate" class="text-center">Date</h3>
+                        <img id="dayThreeImg" class="rounded mx-auto d-block" src="">
+                        <p id="dayThreeTemp">Temp:</p>
+                        <p id="dayThreeWind">Wind:</p>
+                        <p id="dayThreeHum">Humidity:</p>
                     </div>
                     <!--Fourth day-->
                     <div class="col p-1 m-2 fiveDayBlock">
-                        <h3 id="dayFourDate" class="text-center">Date goes here</h3>
-                        <p id="dayFourTemp">Temp goes here</p>
-                        <p id="dayFourWind">Wind goes here</p>
-                        <p id="dayFourHum">Humidity goes here</p>
+                        <h3 id="dayFourDate" class="text-center">Date</h3>
+                        <img id="dayFourImg" class="rounded mx-auto d-block" src="">
+                        <p id="dayFourTemp">Temp:</p>
+                        <p id="dayFourWind">Wind:</p>
+                        <p id="dayFourHum">Humidity:</p>
                     </div>
                     <!--Fifth day-->
                     <div class="col p-1 m-2 fiveDayBlock">
-                        <h3 id="dayFiveDate" class="text-center">Date goes here</h3>
-                        <p id="dayFiveTemp">Temp goes here</p>
-                        <p id="dayFiveWind">Wind goes here</p>
-                        <p id="dayFiveHum">Humidity goes here</p>
+                        <h3 id="dayFiveDate" class="text-center">Date</h3>
+                        <img id="dayFiveImg" class="rounded mx-auto d-block" src="">
+                        <p id="dayFiveTemp">Temp:</p>
+                        <p id="dayFiveWind">Wind:</p>
+                        <p id="dayFiveHum">Humidity:</p>
                     </div>
                 </div>
             </div>
         </main>
     
     
-        <aside id="searchBarContainer" class="col-3">
+        <aside id="searchBarContainer" class="container-md col-3">
             <!--Search Bar-->
             <form class="row p-2 m-1" id="searchForCity">
-                <label>Search for a City:</label>
-                <input type="text" placeholder="Philadelphia" class="citySearch">
+                <label id="searchInstruction">Search for a City:</label>
+                <input type="text" placeholder="Philadelphia" class="citySearch text-center">
                 <button id="searchBtn">Search</button>
             </form>
             <!--Search History buttons-->
-            <div class=" row p-2 ms-2">
-                <button class="row my-2">
+            <div class="previousSearches row p-2 m-1">
+                <button class="row my-2 ms-1">
                     Previous City 1
                 </button>
-                <button class="row my-2">
+                <button class="row my-2 ms-1">
                     Previous City 2
                 </button>
-                <button class="row my-2">
+                <button class="row my-2 ms-1">
                     Previous City 3
                 </button>
-                <button class="row my-2">
+                <button class="row my-2 ms-1">
                     Previous City 4
                 </button>
-                <button class="row my-2">
+                <button class="row my-2 ms-1">
                     Previous City 5
                 </button>
             </div>
