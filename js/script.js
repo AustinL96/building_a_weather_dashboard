@@ -99,22 +99,3 @@ var geocodingLatLon = "http://api.openweathermap.org/geo/1.0/direct?q=" + submit
     }
 
     getCoordsByCity()
-
-
-
-
-
-
-
-
-//*** TO DO LIST */
-
-//** CREATE A FORM THAT INPUTS A CITY NAME. WHEN INPUTTED, it returns that place's latitude and longitude
-//   Then, input the lat and lon variable into the 5 day forecast query
-
-//** User inputs the city, city is pulled and stored locally in search history
-//   Immediately take that stored data and place it incurrent weather section with Search btn  */
-
-//** STORE THIS WEATHER DATA WHEN SEARCHED */
-
-// ** CREATE A SEARCH HISTORY THAT CONTAINS PREVIOUS CITIES, TO REFERENCE AGAIN
